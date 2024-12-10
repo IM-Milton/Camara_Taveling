@@ -5,31 +5,32 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Camera_Travelling"
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="664dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="144dp"
-        android:layout_height="61dp"
-        android:text="left"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="609dp" />
+        <Button
+            android:id="@+id/Button_Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Left" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="146dp"
-        android:layout_height="51dp"
-        android:text="right"
-        tools:layout_editor_absoluteX="246dp"
-        tools:layout_editor_absoluteY="613dp" />
-
+        <Button
+            android:id="@+id/Button_Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Right" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
